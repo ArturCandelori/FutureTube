@@ -27,12 +27,29 @@ main{
     width: 100vw;
     height: 90vh;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
-.container{
+nav{
+    border-right: 1px solid black;
+    width: 5vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nav-container{
+    width: 5vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.video-container{
     width: 80vw;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
