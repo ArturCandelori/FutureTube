@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+a{
+    color: black;
+    text-decoration: none;
+}
+
 header{
     background-color: orange;
     width: 100vw;
@@ -32,24 +37,31 @@ main{
 }
 
 nav{
+    width: 10%;
+    height: 100%;
     border-right: 1px solid black;
-    width: 5vw;
-    height: 90vh;
+}
+
+nav ul{
+    padding-top: 2vh;
+    padding-left: 2vw;
+    list-style-type: none;
+}
+
+nav ul li{
+    padding-bottom: 1vh;
+
+}
+
+.home{
+    width: 90%;
+    height:100%;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 }
 
-.nav-container{
-    width: 5vw;
-    height: 20vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-}
-
-.video-container{
+.container-home{
     width: 80vw;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -71,13 +83,45 @@ nav{
     width: 100%;
 }
 
-.titulo-video{
-    text-align: center;
-    padding-top: 50px;
+.tela-video{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.player{
-    margin:0px
+.tela-video video{
+    width: 768px;
+    height: 432px;
+}
+
+.container-titulo{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.videos-recomendados{
+    width: 20%;
+    height: 100%;
+    border-left: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-recomendados{
+    width: 90%;
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-recomendados p{
+    margin-top: 1vh;
+    font-weight: bold;
 }
 
 footer{
